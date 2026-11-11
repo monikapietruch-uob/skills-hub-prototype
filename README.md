@@ -5,6 +5,9 @@ group (Academic Skills Foundation, technology pathway, University of
 Bedfordshire). It exists to show what the site could look like and how the
 tasks could work. It is not the finished site.
 
+Link: https://monikapietruch-uob.github.io/skills-hub-prototype/ 
+
+
 Three blocks, 20 sample tasks:
 
 | Block | Weeks | Tasks |
