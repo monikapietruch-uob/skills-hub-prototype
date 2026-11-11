@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+  index.html — the home page of the Skills Practice Hub prototype.
+
+  The words of this page are here in the HTML. The header, the menu and
+  the footer are added by js/core.js (Hub.shell), and js/home.js fills in
+  the task counts from the three data files.
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- A prototype: search engines are asked not to list it. -->
+  <meta name="robots" content="noindex">
+  <title>Skills Practice Hub – Write it.</title>
+  <meta name="description" content="Practice tasks for paraphrasing, summarising and report writing. Academic Skills Foundation, technology pathway. A prototype.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="home">
+
+<main id="main" tabindex="-1">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker">Academic Skills Foundation, technology pathway</p>
+        <h1>Write it.</h1>
+        <p class="hero-lede">Paraphrase it, summarise it, report it. Then run the tests, the way a programmer would.</p>
+        <p class="hero-actions"><a class="btn btn-light" href="paraphrasing.html">Start with paraphrasing</a></p>
+        <p class="hero-note"><span data-total>20</span> sample tasks for weeks 2 to 11</p>
+      </div>
+
+      <!-- A picture of what every writing task ends with. The four results appear one after another, once. -->
+      <figure class="demo">
+        <figcaption>Test run</figcaption>
+        <dl>
+          <dt>Source</dt>
+          <dd>Karel can only turn left.</dd>
+          <dt>Paraphrase</dt>
+          <dd>Karel is only able to turn left.</dd>
+        </dl>
+        <ol class="demo-tests">
+          <li style="--n:0"><span class="pill pill-pass">Pass</span><strong>Meaning</strong><span>the same as the source</span></li>
+          <li style="--n:1"><span class="pill pill-pass">Pass</span><strong>Information</strong><span>“only” is still there</span></li>
+          <li style="--n:2"><span class="pill pill-pass">Pass</span><strong>Changes</strong><span>the words and the grammar</span></li>
+          <li style="--n:3"><span class="pill pill-pass">Pass</span><strong>Grammar</strong><span>an accurate sentence</span></li>
+        </ol>
+        <p class="demo-total">All 4 tests pass.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="wrap">
+      <h2>Three blocks</h2>
+      <p class="section-intro">Each block follows the weeks of the unit. The rules in every block are the rules from the slides, and the texts are about the things you study: Karel, the web, the labs.</p>
+
+      <article class="band band-paraphrasing">
+        <p class="band-weeks"><span>Weeks</span>2–4</p>
+        <div class="band-main">
+          <h3><a href="paraphrasing.html">Paraphrasing</a></h3>
+          <p>Say the same thing in your own English: sentences, pairs of sentences and short paragraphs.</p>
+          <p class="band-kinds">The explanation swap, word shape, Karel’s attempts, which is closest, the four stages, test format.</p>
+        </div>
+        <div class="band-side">
+          <p><span data-count="paraphrasing">7 tasks</span><br><span data-progress="paraphrasing"></span></p>
+          <a class="btn btn-light" href="paraphrasing.html">Open paraphrasing</a>
+        </div>
+      </article>
+
+      <article class="band band-summarising">
+        <p class="band-weeks"><span>Weeks</span>6–8</p>
+        <div class="band-main">
+          <h3><a href="summarising.html">Summarising</a></h3>
+          <p>Take notes, keep the main ideas and lose the rest: one talk to listen to, one article to read.</p>
+          <p class="band-kinds">Karel’s rules, signposts, main idea or detail, three summaries, a note frame, five test cases.</p>
+        </div>
+        <div class="band-side">
+          <p><span data-count="summarising">7 tasks</span><br><span data-progress="summarising"></span></p>
+          <a class="btn btn-light" href="summarising.html">Open summarising</a>
+        </div>
+      </article>
+
+      <article class="band band-reports">
+        <p class="band-weeks"><span>Weeks</span>9–11</p>
+        <div class="band-main">
+          <h3><a href="reports.html">Report writing</a></h3>
+          <p>A problem in a technology sector, two solutions, and which one is better.</p>
+          <p class="band-kinds">Report order, three introductions, linking words, proofreading, a planner, a structure checker.</p>
+        </div>
+        <div class="band-side">
+          <p><span data-count="reports">6 tasks</span><br><span data-progress="reports"></span></p>
+          <a class="btn btn-light" href="reports.html">Open report writing</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="wrap">
+      <h2>Every task is a small program</h2>
+      <p class="section-intro">Think like a programmer: something goes in, you process it, something comes out, and then it is tested.</p>
+      <ol class="flow">
+        <li><h3>Input</h3><p>A source: a sentence, a talk, an article, a problem.</p></li>
+        <li><h3>Process</h3><p>You do the work: match, choose, highlight, take notes, write.</p></li>
+        <li><h3>Output</h3><p>Your paraphrase, your summary, your report.</p></li>
+        <li><h3>Tests</h3><p>The site runs the tests a computer can run. You run the rest.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="wrap split-grid">
+      <div>
+        <h2>What the site checks</h2>
+        <ul class="ticks">
+          <li>Words copied from the source, and words you could have changed.</li>
+          <li>Technical terms that have gone missing, and dictionary disasters.</li>
+          <li>Numbers, and the small words that carry meaning: only, always, most.</li>
+          <li>Length and word counts.</li>
+          <li>The first sentence of a summary.</li>
+          <li>Every answer in the quick tasks.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>What you check</h2>
+        <ul class="crosses">
+          <li>Meaning: is it the same as the source?</li>
+          <li>Grammar: is every sentence accurate?</li>
+          <li>Has the grammar changed, or only the words?</li>
+          <li>Is a main idea missing?</li>
+        </ul>
+        <p>A computer cannot read for meaning. So tick a test only when you have run it yourself, then swap with a partner. Programmers call that a code review.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<noscript><p class="noscript">This site needs JavaScript to draw its menu and its tasks. Please switch JavaScript on in your browser.</p></noscript>
+
+<script src="js/core.js"></script>
+<script src="data/paraphrasing.js"></script>
+<script src="data/summarising.js"></script>
+<script src="data/reports.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

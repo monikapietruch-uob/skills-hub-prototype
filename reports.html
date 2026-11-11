@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+  reports.html — block 3, weeks 9 to 11.
+
+  This page is almost empty on purpose. <body data-block="reports"> says which
+  block this is; data/reports.js holds its rules and tasks; js/block.js draws
+  the task list, or one task, into <main>. The three block pages differ
+  only in those two names.
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Report writing – Skills Practice Hub</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="reports" data-block="reports">
+
+<main id="main" tabindex="-1"></main>
+
+<noscript><p class="noscript">This site needs JavaScript to draw its menu and its tasks. Please switch JavaScript on in your browser.</p></noscript>
+
+<!-- The order matters: each script uses what the ones above it set up. -->
+<script src="js/core.js"></script>
+<script src="js/checks.js"></script>
+<script src="js/kinds-quick.js"></script>
+<script src="js/kinds-writing.js"></script>
+<script src="data/reports.js"></script>
+<script src="js/block.js"></script>
+</body>
+</html>
